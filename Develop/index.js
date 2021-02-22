@@ -124,7 +124,7 @@ const mockData = {
 }
 questions().then(data => {
     const pageMarkdown = generateMarkdown(data);
-    fs.writeFile('../dist/readme.md', pageMarkdown, err => {
+    fs.writeFile('../readme.md', pageMarkdown, err => {
         if (err) {
           console.log(err);
           return;
