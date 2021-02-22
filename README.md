@@ -4,7 +4,7 @@
   ## Description
   A command line application which prompts the user for the appropriate info for a high quality readme.md and then outputs the file.  With this generator a developer can streamline their workflow and increase productivity without sacrificing quality.
   ## Table of Contents
-  * [Desciption](#description)
+  * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
