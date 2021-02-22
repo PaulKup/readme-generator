@@ -110,13 +110,18 @@ const questions = () => {
     ])}
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
+const mockData = {
+    title: 'run buddy',
+    description: 'Spicy jalapeno jerky turkey rump filet mignon, spare ribs sausage picanha ball tip hamburger venison. Ham short loin ribeye, picanha venison ham hock pancetta chuck leberkas strip steak meatloaf ball tip filet mignon turducken. Leberkas spare ribs landjaeger prosciutto, porchetta bacon ground round ball tip tri-tip. Meatball landjaeger alcatra, meatloaf pastrami porchetta tail frankfurter leberkas cow corned beef pork chop rump strip steak. Turkey pork chop shankle, pork loin shank pork cow beef ribs kielbasa picanha. Tongue short loin boudin pork loin swine, frankfurter filet mignon doner biltong. Spare ribs alcatra drumstick turducken, pastrami cupim tenderloin capicola pork loin corned beef t-bone beef. Doner flank sausage shankle strip steak bresaola rump. Porchetta cow picanha jerky jowl sausage. Kielbasa porchetta pig corned beef, fatback leberkas biltong filet mignon landjaeger ball tip spare ribs turkey sirloin pork chop.',
+    installation: 'Spicy jalapeno jerky turkey rump filet mignon, spare ribs sausage picanha ball tip hamburger venison. Ham short loin ribeye, picanha venison ham hock pancetta chuck leberkas strip steak meatloaf ball tip filet mignon turducken. Leberkas spare ribs landjaeger prosciutto, porchetta bacon ground round ball tip tri-tip. Meatball landjaeger alcatra, meatloaf pastrami porchetta tail frankfurter leberkas cow corned beef pork chop rump strip steak. Turkey pork chop shankle, pork loin shank pork cow beef ribs kielbasa picanha. Tongue short loin boudin pork loin swine, frankfurter filet mignon doner biltong. Spare ribs alcatra drumstick turducken, pastrami cupim tenderloin capicola pork loin corned beef t-bone beef. Doner flank sausage shankle strip steak bresaola rump. Porchetta cow picanha jerky jowl sausage. Kielbasa porchetta pig corned beef, fatback leberkas biltong filet mignon landjaeger ball tip spare ribs turkey sirloin pork chop.',
+    usage: 'Spicy jalapeno jerky turkey rump filet mignon, spare ribs sausage picanha ball tip hamburger venison. Ham short loin ribeye, picanha venison ham hock pancetta chuck leberkas strip steak meatloaf ball tip filet mignon turducken. Leberkas spare ribs landjaeger prosciutto, porchetta bacon ground round ball tip tri-tip. Meatball landjaeger alcatra, meatloaf pastrami porchetta tail frankfurter leberkas cow corned beef pork chop rump strip steak. Turkey pork chop shankle, pork loin shank pork cow beef ribs kielbasa picanha. Tongue short loin boudin pork loin swine, frankfurter filet mignon doner biltong. Spare ribs alcatra drumstick turducken, pastrami cupim tenderloin capicola pork loin corned beef t-bone beef. Doner flank sausage shankle strip steak bresaola rump. Porchetta cow picanha jerky jowl sausage. Kielbasa porchetta pig corned beef, fatback leberkas biltong filet mignon landjaeger ball tip spare ribs turkey sirloin pork chop.',
+    license: 'GNU General Public License v3.0',
+    contribute: 'Spicy jalapeno jerky turkey rump filet mignon, spare ribs sausage picanha ball tip hamburger venison. Ham short loin ribeye, picanha venison ham hock pancetta chuck leberkas strip steak meatloaf ball tip filet mignon turducken. Leberkas spare ribs landjaeger prosciutto, porchetta bacon ground round ball tip tri-tip. Meatball landjaeger alcatra, meatloaf pastrami porchetta tail frankfurter leberkas cow corned beef pork chop rump strip steak. Turkey pork chop shankle, pork loin shank pork cow beef ribs kielbasa picanha. Tongue short loin boudin pork loin swine, frankfurter filet mignon doner biltong. Spare ribs alcatra drumstick turducken, pastrami cupim tenderloin capicola pork loin corned beef t-bone beef. Doner flank sausage shankle strip steak bresaola rump. Porchetta cow picanha jerky jowl sausage. Kielbasa porchetta pig corned beef, fatback leberkas biltong filet mignon landjaeger ball tip spare ribs turkey sirloin pork chop.',
+    test: 'Spicy jalapeno jerky turkey rump filet mignon, spare ribs sausage picanha ball tip hamburger venison. Ham short loin ribeye, picanha venison ham hock pancetta chuck leberkas strip steak meatloaf ball tip filet mignon turducken. Leberkas spare ribs landjaeger prosciutto, porchetta bacon ground round ball tip tri-tip. Meatball landjaeger alcatra, meatloaf pastrami porchetta tail frankfurter leberkas cow corned beef pork chop rump strip steak. Turkey pork chop shankle, pork loin shank pork cow beef ribs kielbasa picanha. Tongue short loin boudin pork loin swine, frankfurter filet mignon doner biltong. Spare ribs alcatra drumstick turducken, pastrami cupim tenderloin capicola pork loin corned beef t-bone beef. Doner flank sausage shankle strip steak bresaola rump. Porchetta cow picanha jerky jowl sausage. Kielbasa porchetta pig corned beef, fatback leberkas biltong filet mignon landjaeger ball tip spare ribs turkey sirloin pork chop.',
+    githubUsername: 'paulkup',
+    email: 'kupiszxewski'
+}
 questions().then(data => {
     const pageMarkdown = generateMarkdown(data);
     fs.writeFile('../dist/readme.md', pageMarkdown, err => {
@@ -126,3 +131,10 @@ questions().then(data => {
         }
     })
 });
+    // const pageMarkdown = generateMarkdown(mockData);
+    // fs.writeFile('../dist/readme.md', pageMarkdown, err => {
+    //     if (err) {
+    //       console.log(err);
+    //       return;
+    //     }
+    // })
