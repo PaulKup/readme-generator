@@ -2,7 +2,7 @@
   <img src='https://img.shields.io/badge/LICENSE-MIT-blue'/> 
 
   ## Description
-  A command line application which prompts the user for the appropriate info for a high quality readme.md and then outputs the file.  With this generator a developer can streamline their workflow and increase productivity without sacrificing quality.
+  A command line application which prompts the user for the appropriate info for a high quality readme.md and then outputs the file.  With this generator a developer can streamline their workflow and increase productivity without sacrificing quality. [walkthrough video](https://drive.google.com/file/d/1cX5jgXe0l5Y-rWrT6lQj79WqOdYFizMp/view)
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
